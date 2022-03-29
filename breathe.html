@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Breathing Exercises</title>
+    <script src="./svgjs/svg.min.js"></script>
+    <script src="breathe.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function start() {
+            let options = readGET()
+            if (options["mode"] == undefined) {
+                let loc = window.location
+                if (window.location.toString().split("?").length > 1) {
+                    window.location = window.location + "&mode=circle"
+                } else {
+                    window.location = window.location + "?mode=circle"
+                }
+            }
+            if (options["mode"] == "circle") {
+                let duration = parseInt(options["duration"])
+                if (duration > 0) {
+                    modeRingUpDown(duration, duration + 2)
+                } else {
+                    window.location = window.location + "&duration=4"
+                }
+            }
+            if (options["mode"] == "square") {
+                let duration = parseInt(options["duration"])
+                if (duration > 0) {
+                    modeSquare(duration)
+                } else {
+                    window.location = window.location + "&duration=4"
+                }
+            }
+            showTimerForm()
+        }
+    </script>
+</head>
+
+<body onload="start()">
+    <div id="guide" class="center-column">
+        <p>
+            Use the dial below to guide your breathing. Don't worry about being precise.
+        </p>
+        <p>
+            Make sure you feel comfortable. This is not about pushing yourself.
+        </p>
+        <div id="instructions">
+        </div>
+        <div id="visuals">
+        </div>
+        <div id="timer">
+        </div>
+        <div id="return">
+            <a href="index.html">Exercise list</a>
+        </div>
+    </div>
+    <div id="github" class="center-column">
+        <p>This project is
+            <a href="https://github.com/hmillerbakewell/breathing-exercises">open source</a>.
+        </p>
+    </div>
+</body>

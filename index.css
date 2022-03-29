@@ -1,0 +1,71 @@
+@media only screen and (max-width: 1000px) {
+
+    body {
+        font-size: 4vw;
+    }
+
+    .center-column {
+        width: 100%;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    #github {
+        font-size: 3vw;
+        margin-top: 4em;
+    }
+
+    .instruction {
+        font-size: 6vw;
+    }
+
+    #guide {
+        margin-top: 10vw;
+    }
+
+}
+
+@media not (max-width: 1000px) {
+    body {
+        font-size: large;
+    }
+
+    .center-column {
+        max-width: 30em;
+        margin: auto;
+    }
+
+    #github {
+        font-size: small;
+        margin-top: 4em;
+    }
+
+    .instruction {
+        font-size: large;
+    }
+
+    #guide {
+        margin-top: 5em;
+    }
+
+}
+
+ul{
+text-align: left;
+}
+
+.center-column > h1 {
+    text-align: center;
+}
+
+.center-column > div {
+    margin-top: 4em;
+}
+
+#instructions {
+    width: 100%;
+}
+
+.instruction {
+    text-align: center;
+}

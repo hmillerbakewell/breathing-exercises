@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Breathing Exercises</title>
+    <script src="./svgjs/svg.min.js"></script>
+    <script src="breathe.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="choices" class="center-column">
+        <h1>Breathing Exercises</h1>
+        <p>
+            This website provides visual aides for performing simple breathing exercises.
+            It is not a substitute for medical advice,
+            so please see a medical professional if you have any health concerns.
+        </p>
+        <p>
+            For each style you can choose the duration of each phase of the exercise.
+            This is not a challenge, the goal is to find the exercise with which you are most comfortable.
+        </p>
+        <h2>In-out breathing</h2>
+        <ul>
+            <li>
+                <a href="breathe.html?mode=circle&duration=4">In for four, out for six</a>
+            </li>
+            <li>
+                <a href="breathe.html?mode=circle&duration=5">In for five, out for seven</a>
+            </li>
+            <li>
+                <a href="breathe.html?mode=circle&duration=6">In for six, out for eight</a>
+            </li>
+        </ul>
+        <h2>Square breathing; hold your breath between the inhale and exhale</h2>
+        <ul>
+            <li>
+                <a href="breathe.html?mode=square&duration=4">In for four, hold for four, etc.</a>
+            </li>
+            <li>
+                <a href="breathe.html?mode=square&duration=5">In for five, hold for five, etc.</a>
+            </li>
+            <li>
+                <a href="breathe.html?mode=square&duration=6">In for six, hold for six, etc.</a>
+            </li>
+        </ul>
+    </div>
+    <div id="github" class="center-column">
+        <p>This project is
+            <a href="https://github.com/hmillerbakewell/breathing-exercises">open source</a>.
+        </p>
+    </div>
+</body>
